@@ -1,0 +1,36 @@
+<div class="form-container" style="border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+  <h3>Registrar Nuevo Cliente</h3>
+
+  <div *ngIf="mensajeExito" style="color: green; font-weight: bold; margin-bottom: 10px;">
+    {{ mensajeExito }}
+  </div>
+  <div *ngIf="mensajeError" style="color: red; font-weight: bold; margin-bottom: 10px;">
+    {{ mensajeError }}
+  </div>
+
+  <form (ngSubmit)="onSubmit()">
+    <div style="margin-bottom: 10px;">
+      <label style="display: block;">Código Cliente:</label>
+      <input type="text" [(ngModel)]="cliente.codigo_cliente" name="codigo" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
+    </div>
+
+    <div style="margin-bottom: 10px;">
+      <label style="display: block;">Nombre Completo:</label>
+      <input type="text" [(ngModel)]="cliente.nombre_cliente" name="nombre" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
+    </div>
+
+    <div style="margin-bottom: 10px;">
+      <label style="display: block;">Dirección:</label>
+      <input type="text" [(ngModel)]="cliente.direccion_cliente" name="direccion" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label style="display: block;">Teléfono:</label>
+      <input type="text" [(ngModel)]="cliente.telefono" name="telefono" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
+    </div>
+
+    <button type="submit" style="background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">
+      Guardar Cliente
+    </button>
+  </form>
+</div>
