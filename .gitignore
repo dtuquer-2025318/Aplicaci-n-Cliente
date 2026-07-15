@@ -1,0 +1,22 @@
+# Dependencias - MUY IMPORTANTE
+node_modules/
+**/node_modules/
+
+# Angular
+.angular/
+dist/
+**/dist/
+
+# Variables de entorno
+.env
+.env.local
+
+# Logs
+*.log
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+
+# TypeScript build
+*.tsbuildinfo

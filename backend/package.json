@@ -1,0 +1,24 @@
+{
+    "name": "ms-clientes",
+    "version": "1.0.0",
+    "main": "src/app.ts",
+    "scripts": {
+        "dev": "tsx watch src/app.ts",
+        "build": "tsc",
+        "start": "node dist/app.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "pg": "^8.22.0"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.19",
+        "@types/express": "^4.17.25",
+        "@types/node": "^26.1.0",
+        "@types/pg": "^8.11.6",
+        "ts-node-dev": "^2.0.0",
+        "tsx": "^4.23.1",
+        "typescript": "^5.4.5"
+    }
+}

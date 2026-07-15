@@ -1,0 +1,19 @@
+{
+  "name": "conred_2025318",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev:backend": "pnpm --filter ms-clientes dev",
+  "dev:frontend": "pnpm --filter web-clientes start",
+  "dev": "pnpm --filter ms-clientes --filter web-clientes --parallel run dev"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.29.2",
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "typescript": "^6.0.3"
+  }
+}
